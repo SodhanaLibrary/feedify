@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>feedify - DEMO</title>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.js'></script>
+<script type='text/javascript' src='jQuery.feedify.js'></script>
+</head>
+<body>
+<div style="width:500px;margin:auto;">
+<h1>Edit Input Text Here:</h1> 
+<textarea id="mytext" cols="50" rows="10">
+Hi my twitter account is @SodhanaLibrary 
+
+I wrote #jQuery articles on http://blog.sodhanalibrary.com
+
+Contact me at admin@sodhanalibrary.com
+
+This below script is not going to execute because of encoding
+
+<script>alert('hello');</script>
+ 
+</textarea>
+<br/>
+<br/>
+<button id="feedifyButton" style="font-size:20px">Apply Feedify</button>
+<br/>
+<h1>Output :</h1>
+
+<pre id="result"></pre>
+
+</div>
+</body>
+<script type="text/javascript">
+$(function() {
+	$("#result").html( $.feedify($("#mytext").val()) );
+	
+	$("#feedifyButton").click(function(){
+		$("#result").html( $.feedify($("#mytext").val()) );
+	});
+});
+</script>
+</html>
