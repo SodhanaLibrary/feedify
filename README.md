@@ -3,5 +3,5 @@ feedify
 
 jQuery plugin to convert text into HTML feed
 
-<a href="#">Click Here to see Documentation and Demos </a>
+<a href="http://blog.sodhanalibrary.com/2014/03/feedify-jquery-plugin-to-convert-text.html">Click Here to see Documentation and Demos </a>
 
